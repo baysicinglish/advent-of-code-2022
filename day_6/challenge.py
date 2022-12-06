@@ -1,6 +1,6 @@
 
 def solve(datastream, marker_length=4):
-    for index in range(marker_length, len(datastream) + 1):
+    for index in range(marker_length, len(datastream)):
         if len(set(datastream[index - marker_length : index])) == marker_length:
             return index
 
