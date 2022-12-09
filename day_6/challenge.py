@@ -17,5 +17,6 @@ assert solve('zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw', marker_length=14) == 26
 
 with open('advent_of_code_2022/day_6/input.txt') as file:
     datastream = file.readline()
+
 print(solve(datastream))
 print(solve(datastream, marker_length=14))
