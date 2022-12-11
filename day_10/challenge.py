@@ -38,10 +38,7 @@ class CRT:
     def draw(self, register_stream):
         for cycle, register_value in enumerate(register_stream[1:]):
             if cycle % 40 in range(register_value - 1, register_value + 2):
-                print(cycle, register_value, True)
                 self.pixels[cycle // 40][cycle % 40] = '#'
-            else:
-                print(cycle, register_value, False)
 
 
 def solve(input_file):
