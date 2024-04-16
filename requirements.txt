@@ -1,3 +1,4 @@
 cryptography==39.0.1
 djangorestframework==3.11.2
 numpy==1.22.2
+sqlparse>=0.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
